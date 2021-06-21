@@ -1,0 +1,9 @@
+# Ignore folders
+.vscode-test/
+out/
+dist/
+test-fixtures/
+node_modules/
+
+# Ignore JS files
+*.js
