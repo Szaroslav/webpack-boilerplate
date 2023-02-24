@@ -4,8 +4,8 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "webpack -w --color --config config/webpack.dev.js",
-        "serve": "webpack serve --open --config config/webpack.dev.js",
+        "start": "webpack serve --config config/webpack.dev.js",
+        "watch": "webpack -w --color --config config/webpack.dev.watch.js",
         "build": "webpack --config config/webpack.prod.js"
     },
     "keywords": [],
@@ -17,6 +17,7 @@
         "babel-loader": "^9.1.2",
         "browser-sync": "^2.27.12",
         "browser-sync-webpack-plugin": "^2.3.0",
+        "clean-webpack-plugin": "^4.0.0",
         "css-loader": "^6.7.3",
         "html-loader": "^4.2.0",
         "html-webpack-plugin": "^5.5.0",

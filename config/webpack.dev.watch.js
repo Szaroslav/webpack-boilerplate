@@ -1,4 +1,3 @@
-const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
 
@@ -14,24 +13,11 @@ module.exports = merge(common, {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
-        new BrowserSyncPlugin(
-            {
-                host: 'localhost',
-                port: 3000,
-                proxy: 'http://localhost:8000/'
-            },
-            { reload: false }
-        )
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: ['public'] }
+        })
     ],
-    devServer: {
-        static: {
-            directory: path.join(__dirname, '../public')
-        },
-        port: 8000,
-        hot: true,
-        devMiddleware: {
-            writeToDisk: true,
-        }
-    },
     devtool: 'inline-source-map'
 });
