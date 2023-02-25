@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "start": "webpack serve --config config/webpack.dev.js",
-        "watch": "webpack -w --color --config config/webpack.dev.watch.js",
+        "watch": "webpack -w --color --config config/webpack.dev.js",
         "build": "webpack --config config/webpack.prod.js"
     },
     "keywords": [],
@@ -25,6 +25,8 @@
         "sass": "^1.58.3",
         "sass-loader": "^13.2.0",
         "style-loader": "^3.3.1",
+        "ts-loader": "^9.4.2",
+        "typescript": "^4.9.5",
         "webpack": "^5.75.0",
         "webpack-cli": "^5.0.1",
         "webpack-dev-server": "^4.11.1",

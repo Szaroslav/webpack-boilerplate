@@ -1,0 +1,1 @@
+{"version":3,"file":"main.b8121fd7570458d4fed7.css","mappings":"AAAA,KACI,SACA,iB","sources":["webpack://webpack-boilerplate/./src/scss/index.scss"],"sourcesContent":["body {\r\n    margin: 0;\r\n    min-height: 100vh;\r\n}\r\n"],"names":[],"sourceRoot":""}
